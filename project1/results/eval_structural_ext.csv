@@ -1,0 +1,49 @@
+url,block,expected,got,low,high,error,source_type,band_ok,why
+https://www.nature.com/articles/s41586-021-03819-2,in-table,0.95,0.87,0.64,1.0,0.07999999999999996,Peer-reviewed journal article,True,peer-reviewed journal article
+https://www.nejm.org/doi/full/10.1056/NEJMoa2034577,in-table,0.95,0.97,0.73,1.0,0.020000000000000018,Peer-reviewed journal article,True,peer-reviewed medical journal
+https://pubmed.ncbi.nlm.nih.gov/33301246/,in-table,0.9,0.96,0.73,1.0,0.05999999999999994,Scholarly index / database,True,indexed biomedical literature
+https://www.reuters.com/world/example-report-2024-01-01/,in-table,0.85,0.76,0.52,0.94,0.08999999999999997,News report,True,"wire service, corrections policy"
+https://www.census.gov/data/tables/2023/demo/income-poverty.html,in-table,0.9,0.91,0.49,1.0,0.010000000000000009,Government / official source,True,primary government statistics
+https://apnews.com/article/example-story-12345,in-table,0.85,0.76,0.52,0.94,0.08999999999999997,News report,True,wire service
+https://arxiv.org/abs/1706.03762,in-table,0.65,0.68,0.44,0.86,0.030000000000000027,Preprint (not peer reviewed),True,"influential BUT a preprint, not peer reviewed"
+https://en.wikipedia.org/wiki/Statistical_learning_theory,in-table,0.6,0.8,0.5,0.99,0.20000000000000007,Reference work,False,well-sourced but tertiary and open-edit
+https://www.biorxiv.org/content/10.1101/2020.01.01.000001v1,in-table,0.5,0.61,0.36,0.83,0.10999999999999999,Preprint (not peer reviewed),True,"preprint, no review"
+https://scikit-learn.org/stable/modules/linear_model.html,in-table,0.75,0.79,0.36,1.0,0.040000000000000036,Official documentation,True,authoritative docs for its own library
+https://medium.com/@someone/why-ai-is-magic-abc123,in-table,0.25,0.18,0.0,0.37,0.07,Self-published blog,True,"self-published, no editorial review"
+https://randomblog.blogspot.com/2024/03/my-thoughts.html,in-table,0.15,0.13,0.0,0.34,0.01999999999999999,Self-published blog,True,personal blog
+https://www.reddit.com/r/MachineLearning/comments/abc123/,in-table,0.2,0.14,0.0,0.33,0.06,Forum / user-generated,True,user-generated comment thread
+https://example.com/sponsored/miracle-supplement,in-table,0.1,0.14,0.0,0.43,0.04000000000000001,Promotional / sponsored,True,sponsored commercial content
+https://www.theonion.com/study-finds-example-1849,in-table,0.05,0.12,0.0,0.32,0.06999999999999999,Satire,True,"satire, factually false by design"
+http://totally-legit-news.xyz/shocking-truth,in-table,0.05,0.01,0.0,0.31,0.04,"Unverified, suspicious site",True,"no provenance, insecure, throwaway TLD"
+https://www.pnas.org/doi/10.1073/pnas.2020123118,held-out,0.92,0.86,0.48,1.0,0.06000000000000005,Peer-reviewed journal article,True,peer-reviewed academy journal
+https://jamanetwork.com/journals/jama/fullarticle/2762130,held-out,0.93,0.72,0.34,1.0,0.21000000000000008,Unrecognised source,True,peer-reviewed medical journal
+https://www.who.int/news-room/fact-sheets/detail/example,held-out,0.88,0.91,0.5,1.0,0.030000000000000027,International organisation,True,international health authority
+https://www.propublica.org/article/example-investigation,held-out,0.85,0.76,0.38,1.0,0.08999999999999997,News report,True,"investigative newsroom, fact-checked"
+https://www.imf.org/en/Publications/WEO/example,held-out,0.85,0.8,0.39,1.0,0.04999999999999993,International organisation,True,primary economic data publisher
+https://stackoverflow.com/questions/12345/how-to-do-x,held-out,0.45,0.41,0.0,0.7,0.040000000000000036,Community Q&A,True,"often correct, but unreviewed and unattributed"
+https://seekingalpha.com/article/example-stock-analysis,held-out,0.35,0.54,0.13,0.84,0.19000000000000006,News report,False,"contributor-submitted, light editorial review"
+https://health-truth-daily.info/miracle-cure-doctors-hate,held-out,0.05,0.03,0.0,0.34,0.020000000000000004,"Unverified, suspicious site",True,"fabricated health claims, no provenance"
+https://journals.lww.com/co-infectiousdiseases/fulltext/2021/02000/example.5.aspx,extended,0.88,0.89,0.46,1.0,0.010000000000000009,Peer-reviewed journal article,True,peer-reviewed journal
+https://www.cambridge.org/core/journals/psychological-medicine/article/example/ABC123,extended,0.9,0.9,0.52,1.0,0.0,Peer-reviewed journal article,True,peer-reviewed journal
+https://www.techrxiv.org/articles/preprint/example/12345,extended,0.5,0.62,0.24,0.92,0.12,Preprint (not peer reviewed),True,"preprint, no review"
+https://www.nhs.uk/conditions/type-2-diabetes/,extended,0.88,0.86,0.46,1.0,0.020000000000000018,Government / official source,True,national health service guidance
+https://www.ecdc.europa.eu/en/publications-data/example-report,extended,0.88,0.91,0.49,1.0,0.030000000000000027,Government / official source,True,EU public-health agency report
+https://www.fao.org/publications/card/en/c/example,extended,0.85,0.8,0.39,1.0,0.04999999999999993,International organisation,True,UN agency publication
+https://www.bea.gov/data/gdp/gross-domestic-product,extended,0.9,0.91,0.49,1.0,0.010000000000000009,Government / official source,True,primary government statistics
+https://www.nps.gov/yell/learn/nature/wolves.htm,extended,0.85,0.86,0.46,1.0,0.010000000000000009,Government / official source,True,government agency information page
+https://www.ipcc.ch/report/ar6/wg1/,extended,0.92,0.51,0.01,0.93,0.41000000000000003,Unrecognised source,False,intergovernmental scientific assessment
+https://www.aljazeera.com/news/2024/1/1/example-story,extended,0.75,0.54,0.13,0.84,0.20999999999999996,News report,False,major international newsroom
+https://www.cnn.com/2024/01/01/politics/example/index.html,extended,0.75,0.54,0.13,0.84,0.20999999999999996,News report,False,major newsroom
+https://www.snopes.com/fact-check/example-claim/,extended,0.8,0.47,0.04,0.77,0.33000000000000007,Unrecognised source,False,established fact-checker
+https://www.vice.com/en/article/example-story,extended,0.6,0.54,0.13,0.84,0.05999999999999994,News report,True,"digital outlet, mixed record"
+https://www.verywellhealth.com/example-condition-overview,extended,0.6,0.47,0.04,0.77,0.13,Unrecognised source,True,"commercial health explainer, medically reviewed"
+https://askubuntu.com/questions/12345/how-to-install-x,extended,0.45,0.41,0.0,0.7,0.040000000000000036,Community Q&A,True,community Q&A
+https://www.cs.princeton.edu/~someone/teaching/notes.html,extended,0.55,0.51,0.11,0.8,0.040000000000000036,Personal page on an academic server,True,personal page on academic server
+https://www.forbes.com/sites/someone/2024/01/01/example-take/,extended,0.45,0.54,0.13,0.84,0.09000000000000002,News report,True,"contributor network, light editing"
+https://someone.github.io/posts/my-take-on-transformers/,extended,0.25,0.3,0.0,0.58,0.04999999999999999,Self-published blog,True,personal blog
+https://www.prweb.com/releases/example/prweb12345.htm,extended,0.25,0.6,0.18,0.9,0.35,Unrecognised source,False,press release
+https://www.tripadvisor.com/ShowUserReviews-g1-d2-r3-Review.html,extended,0.15,0.47,0.04,0.77,0.31999999999999995,Unrecognised source,False,anonymous user review
+https://www.naturalhealth365.com/miracle-herb-cures-everything.html,extended,0.1,0.07,0.0,0.43,0.03,"Unverified, suspicious site",True,health misinformation site
+http://cancer-cure-secrets.net/garlic-destroys-tumors,extended,0.03,0.03,0.0,0.36,0.0,"Unverified, suspicious site",True,fabricated health claims
+https://breaking-news-now-24.top/celebrity-shocking-reveal,extended,0.05,0.03,0.0,0.34,0.020000000000000004,"Unverified, suspicious site",True,throwaway clickbait domain
+https://abcnews.com.co/obama-signs-order-example/,extended,0.02,0.08,0.0,0.74,0.06,"Unverified, suspicious site",True,look-alike impersonation site

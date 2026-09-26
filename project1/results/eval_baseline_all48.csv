@@ -1,0 +1,49 @@
+url,block,expected,got,low,high,error,source_type,band_ok,why
+https://www.nature.com/articles/s41586-021-03819-2,in-table,0.95,0.97,,,0.020000000000000018,baseline,True,peer-reviewed journal article
+https://www.nejm.org/doi/full/10.1056/NEJMoa2034577,in-table,0.95,1.0,,,0.050000000000000044,baseline,True,peer-reviewed medical journal
+https://pubmed.ncbi.nlm.nih.gov/33301246/,in-table,0.9,0.94,,,0.039999999999999925,baseline,True,indexed biomedical literature
+https://www.reuters.com/world/example-report-2024-01-01/,in-table,0.85,0.87,,,0.020000000000000018,baseline,True,"wire service, corrections policy"
+https://www.census.gov/data/tables/2023/demo/income-poverty.html,in-table,0.9,0.9,,,0.0,baseline,True,primary government statistics
+https://apnews.com/article/example-story-12345,in-table,0.85,0.87,,,0.020000000000000018,baseline,True,wire service
+https://arxiv.org/abs/1706.03762,in-table,0.65,0.77,,,0.12,baseline,False,"influential BUT a preprint, not peer reviewed"
+https://en.wikipedia.org/wiki/Statistical_learning_theory,in-table,0.6,0.67,,,0.07000000000000006,baseline,True,well-sourced but tertiary and open-edit
+https://www.biorxiv.org/content/10.1101/2020.01.01.000001v1,in-table,0.5,0.82,,,0.31999999999999995,baseline,False,"preprint, no review"
+https://scikit-learn.org/stable/modules/linear_model.html,in-table,0.75,0.62,,,0.13,baseline,False,authoritative docs for its own library
+https://medium.com/@someone/why-ai-is-magic-abc123,in-table,0.25,0.37,,,0.12,baseline,True,"self-published, no editorial review"
+https://randomblog.blogspot.com/2024/03/my-thoughts.html,in-table,0.15,0.27,,,0.12000000000000002,baseline,True,personal blog
+https://www.reddit.com/r/MachineLearning/comments/abc123/,in-table,0.2,0.15,,,0.05000000000000002,baseline,True,user-generated comment thread
+https://example.com/sponsored/miracle-supplement,in-table,0.1,0.32,,,0.22,baseline,True,sponsored commercial content
+https://www.theonion.com/study-finds-example-1849,in-table,0.05,0.07,,,0.020000000000000004,baseline,True,"satire, factually false by design"
+http://totally-legit-news.xyz/shocking-truth,in-table,0.05,0.2,,,0.15000000000000002,baseline,True,"no provenance, insecure, throwaway TLD"
+https://www.pnas.org/doi/10.1073/pnas.2020123118,held-out,0.92,0.72,,,0.20000000000000007,baseline,True,peer-reviewed academy journal
+https://jamanetwork.com/journals/jama/fullarticle/2762130,held-out,0.93,0.52,,,0.41000000000000003,baseline,False,peer-reviewed medical journal
+https://www.who.int/news-room/fact-sheets/detail/example,held-out,0.88,0.52,,,0.36,baseline,False,international health authority
+https://www.propublica.org/article/example-investigation,held-out,0.85,0.62,,,0.22999999999999998,baseline,False,"investigative newsroom, fact-checked"
+https://www.imf.org/en/Publications/WEO/example,held-out,0.85,0.62,,,0.22999999999999998,baseline,False,primary economic data publisher
+https://stackoverflow.com/questions/12345/how-to-do-x,held-out,0.45,0.52,,,0.07,baseline,True,"often correct, but unreviewed and unattributed"
+https://seekingalpha.com/article/example-stock-analysis,held-out,0.35,0.52,,,0.17000000000000004,baseline,False,"contributor-submitted, light editorial review"
+https://health-truth-daily.info/miracle-cure-doctors-hate,held-out,0.05,0.32,,,0.27,baseline,True,"fabricated health claims, no provenance"
+https://journals.lww.com/co-infectiousdiseases/fulltext/2021/02000/example.5.aspx,extended,0.88,0.52,,,0.36,baseline,False,peer-reviewed journal
+https://www.cambridge.org/core/journals/psychological-medicine/article/example/ABC123,extended,0.9,0.62,,,0.28,baseline,False,peer-reviewed journal
+https://www.techrxiv.org/articles/preprint/example/12345,extended,0.5,0.62,,,0.12,baseline,True,"preprint, no review"
+https://www.nhs.uk/conditions/type-2-diabetes/,extended,0.88,0.52,,,0.36,baseline,False,national health service guidance
+https://www.ecdc.europa.eu/en/publications-data/example-report,extended,0.88,0.52,,,0.36,baseline,False,EU public-health agency report
+https://www.fao.org/publications/card/en/c/example,extended,0.85,0.62,,,0.22999999999999998,baseline,False,UN agency publication
+https://www.bea.gov/data/gdp/gross-domestic-product,extended,0.9,0.9,,,0.0,baseline,True,primary government statistics
+https://www.nps.gov/yell/learn/nature/wolves.htm,extended,0.85,0.9,,,0.050000000000000044,baseline,True,government agency information page
+https://www.ipcc.ch/report/ar6/wg1/,extended,0.92,0.52,,,0.4,baseline,False,intergovernmental scientific assessment
+https://www.aljazeera.com/news/2024/1/1/example-story,extended,0.75,0.52,,,0.22999999999999998,baseline,False,major international newsroom
+https://www.cnn.com/2024/01/01/politics/example/index.html,extended,0.75,0.52,,,0.22999999999999998,baseline,False,major newsroom
+https://www.snopes.com/fact-check/example-claim/,extended,0.8,0.52,,,0.28,baseline,False,established fact-checker
+https://www.vice.com/en/article/example-story,extended,0.6,0.52,,,0.07999999999999996,baseline,True,"digital outlet, mixed record"
+https://www.verywellhealth.com/example-condition-overview,extended,0.6,0.52,,,0.07999999999999996,baseline,True,"commercial health explainer, medically reviewed"
+https://askubuntu.com/questions/12345/how-to-install-x,extended,0.45,0.52,,,0.07,baseline,True,community Q&A
+https://www.cs.princeton.edu/~someone/teaching/notes.html,extended,0.55,0.84,,,0.2899999999999999,baseline,False,personal page on academic server
+https://www.forbes.com/sites/someone/2024/01/01/example-take/,extended,0.45,0.52,,,0.07,baseline,True,"contributor network, light editing"
+https://someone.github.io/posts/my-take-on-transformers/,extended,0.25,0.47,,,0.21999999999999997,baseline,False,personal blog
+https://www.prweb.com/releases/example/prweb12345.htm,extended,0.25,0.52,,,0.27,baseline,False,press release
+https://www.tripadvisor.com/ShowUserReviews-g1-d2-r3-Review.html,extended,0.15,0.52,,,0.37,baseline,False,anonymous user review
+https://www.naturalhealth365.com/miracle-herb-cures-everything.html,extended,0.1,0.52,,,0.42000000000000004,baseline,False,health misinformation site
+http://cancer-cure-secrets.net/garlic-destroys-tumors,extended,0.03,0.43,,,0.4,baseline,False,fabricated health claims
+https://breaking-news-now-24.top/celebrity-shocking-reveal,extended,0.05,0.52,,,0.47000000000000003,baseline,False,throwaway clickbait domain
+https://abcnews.com.co/obama-signs-order-example/,extended,0.02,0.52,,,0.5,baseline,False,look-alike impersonation site

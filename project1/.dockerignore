@@ -1,0 +1,5 @@
+.env
+.venv
+__pycache__
+results/llm_cache.json
+*.pyc
