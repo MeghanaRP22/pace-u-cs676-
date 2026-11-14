@@ -6,7 +6,7 @@ CS676 Algorithms for Data Science · Project 2
 > transcript, and your live cost numbers). Everything else describes code that is in
 > this repository and is covered by the test suite.
 
-**Author:** ✍️ TODO your name · **Model used for live transcripts:** ✍️ TODO (e.g. `claude-haiku-4-5`)
+**Author:** ✍️ TODO your name · claude-haiku-4-5 ✍️ 
 
 ---
 
@@ -259,6 +259,65 @@ have them talk about whether she should try physical therapy
 /cost
 ```
 
+------------
+
+# Conversation: the MRI results
+
+Participants: Margaret Reeves, Dr. Marcus Okonkwo
+
+**Margaret Reeves:** You've just received a call from your doctor's office scheduling a follow-up appointment to discuss your lumbar spine MRI results. You're sitting in your reading chair with the phone pressed to your ear, feeling that familiar knot of dread.
+
+---
+
+Well, they won't tell me anything over the phone, naturally. Says the doctor needs to "walk me through the findings." Which I suspect means she wants to sell me on some expensive intervention I don't need. I've already looked up what they're probably going to find—herniated disc, maybe some stenosis. Everyone my age has these things. The question is whether you actually do anything about it, or whether you just live with it like most sensible people do. But I could be wrong about their motives, I suppose. They're probably just following protocol.
+
+**Dr. Marcus Okonkwo:** Look, I appreciate the skepticism—honestly, most of it's warranted. But let me be straight with you: if my office called you in for a follow-up instead of just saying "everything's fine, see you next year," there's something on that MRI worth discussing. That's not protocol padding, that's just... there's something.
+
+Now, whether that something requires surgery or injections or just stretching exercises and ice packs—that's what we need to talk through. You're right that plenty of people have disc bulges they never notice. But the ones we call patients about usually aren't in that category.
+
+When's your appointment?
+
+**Margaret Reeves:** I suppose that's fair enough. You're not wrong that if everything were perfectly normal, there wouldn't be much point in the conversation, would there?
+
+My appointment is Thursday at two o'clock. Though I'll admit I've been dreading it all week—I've already spent more time than I care to admit reading about what they might find, which I'm sure isn't helping my state of mind. The internet is a marvelous invention for learning and a dreadful one for catastrophizing, but I could be wrong about that.
+
+I just... I want to know what we're actually dealing with, not what some pharmaceutical company has decided is profitable to treat. And I want someone to tell me honestly whether this is something that will genuinely improve with intervention, or whether I'm just paying for the illusion of improvement. That's all I'm asking for.
+
+**Dr. Marcus Okonkwo:** Thursday at two. Good. That's soon enough you don't have to sit with this dread much longer.
+
+Look, I'm going to tell you something that might sound strange coming from a doctor: I'd rather tell you "this doesn't need surgery, here's what actually helps" than sell you on an intervention. Surgery means liability, means complications, means you come back angry. A patient who does their physical therapy and feels better? That's a win I actually sleep on.
+
+The internet catastrophizing—yeah, that's real. You've probably read about the worst-case scenarios and convinced yourself that's what's happening. Doesn't help the dread, does it?
+
+Here's what I'd suggest: go to that appointment Thursday, listen to what she actually says about the imaging, and ask her straight out—"If I do nothing, what happens?" and "If I do something, what's the realistic improvement?" Make her answer those specifically. If she hedges, that tells you something too.
+
+And Margaret? You're not wrong to want honesty. You deserve it. Most of what you're dealing with right now is the not-knowing, not the thing itself.
+
+**Margaret Reeves:** You know, you might be right about that. The not-knowing is rather like waiting for a student's standardized test scores—the anticipation is somehow worse than whatever the actual number turns out to be.
+
+I appreciate what you've said about the liability question. That's actually useful to know. I suppose I've been operating under the assumption that every doctor has an incentive to intervene, but you're right—that cuts both ways, doesn't it? A failed surgery is far more costly than honest conservative management.
+
+Those two questions you mentioned are good ones. "If I do nothing, what happens?" and "If I do something, what's the realistic improvement?" I'll write them down so I don't forget them in the moment, because I do have a tendency to become muddled when I'm anxious.
+
+I'll go Thursday and actually listen instead of sitting there mentally cross-examining her. Though I make no promises about not reading more dreadful internet articles between now and then—old habits die hard. But I could be wrong about whether that's entirely a waste of time. At least I'll know the terminology she uses.
+
+Thank you for that. For the honesty, I mean. And for not treating my skepticism like it's just paranoia
+
+---
+
+_Ended: a participant closed it after 5 lines._
+
+## Observer
+
+**Summary:** Margaret and Dr. Okonkwo had a productive conversation about her upcoming MRI follow-up appointment. Dr. Okonkwo reassured her that the call-in indicates a real finding worth discussing, validated her skepticism about over-intervention, and gave her concrete questions to ask her doctor on Thursday to determine necessity and realistic outcomes.
+
+**Goal:** make real progress on: the MRI results — **4/5**. They made genuine progress identifying the core issue (anxiety about the unknown) and arming Margaret with a practical strategy for the actual appointment, though the MRI results themselves remain undiscussed since this was a pre-appointment phone call.
+
+**In character:** Margaret Reeves ✓, Dr. Marcus Okonkwo ✓
+
+**Flags:**
+- none
+
 Copy the second transcript from `temp/conversations/` to
 `docs/transcripts/live-demo.md`, then write 1–2 paragraphs answering:
 
@@ -345,6 +404,13 @@ window × turns. The window caps the growth at linear once a conversation passes
 |---|---|---|---|
 | ✍️ After conversation 1 | | | |
 | ✍️ After conversation 2 | | | |
+
+
+you › /cost
+15 API call(s) · 19,127 input tokens · 2,475 output tokens
+
+you › /quit
+
 
 ### 5.6 Deployment
 
